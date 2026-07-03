@@ -1,13 +1,13 @@
 # TU Graz projects
 
-This repository contains my academic and personal programming projects.
+This repository contains my academic and personal programming projects.  
 For clarity, all projects are grouped into three categories.
 
 ---
 
 ## 📁 TU_Graz_programming_projects
 
-This folder includes **C programming projects** developed during my studies at **TU Graz**.
+This folder includes **C programming projects** developed during my studies at **TU Graz**.  
 All source files are stored directly in this repository.
 
 ### Examples of projects:
@@ -33,18 +33,18 @@ This folder contains projects related to **Computer Systems, Networks, and LLM S
 
 ### 🔐 LLM Friend or Foe — Guardrail Pipeline for LLM Safety
 
-This project explores **security risks of Large Language Models (LLMs)** and demonstrates how **intent-shifted prompts** can be detected and mitigated using a **judge-then-answer guardrail pipeline**.
+This project explores **security risks of Large Language Models (LLMs)** and demonstrates how intent-shifted prompts can be detected and mitigated using a judge-then-answer guardrail pipeline.
 
 The system analyzes each user query before responding by:
 - detecting intent shifts, harmful domains, and jailbreak attempts,
 - assigning a risk level (LOW / MEDIUM / HIGH),
 - applying a safety policy (ALLOW / SAFE_COMPLETE / REFUSE),
-- generating only **non-actionable, safe responses**.
+- generating only non-actionable, safe responses.
 
-The project was developed as part of the course
-**"LLM – Friend or Foe: Security Risks & Defences"** and focuses on **LLM safety, misuse prevention, and explainable defensive design**.
+The project was developed as part of the course  
+**"LLM – Friend or Foe: Security Risks & Defences"** and focuses on LLM safety, misuse prevention, and explainable defensive design.
 
-**🛠️ Language** `Python`
+**🛠️ Language:** `Python`
 
 ---
 
@@ -56,21 +56,14 @@ This folder includes projects related to **statistics, data analysis, and quanti
 
 This project analyzes salary data of professionals working in **Artificial Intelligence and Data Science** to study the impact of work experience on earnings.
 
-The main research question is:
-**Do professionals with more than five years of experience earn significantly more than those with 0–5 years of experience?**
+Research question:  
+Do professionals with more than five years of experience earn significantly more than those with 0–5 years of experience?
 
-Key aspects of the project:
-- dataset from Kaggle (AI and Data Science Job Salaries, 2020–2025),
-- data preprocessing with currency normalization (USD only),
-- grouping by experience level (0–5 years vs. >5 years),
-- statistical analysis using:
-  - two-sample t-test,
-  - bootstrapping for confidence intervals.
-
-The project demonstrates:
-- applied statistical reasoning,
-- hypothesis testing,
-- robustness analysis using resampling methods.
+Key aspects:
+- dataset from Kaggle (2020–2025)
+- currency normalization (USD only)
+- grouping by experience level
+- statistical analysis using t-test and bootstrapping
 
 **🛠️ Language:** `Python`
 
@@ -78,49 +71,77 @@ The project demonstrates:
 
 ## 📁 TU_Graz_computational_social_systems
 
-This folder includes projects related to **agent-based modelling and social simulation**.
+This folder includes projects related to **agent-based modelling and social simulation (CMSS course)**.
 
 ### 🎲 Prisoner's Dilemma
 
-An agent-based simulation of the **Prisoner's Dilemma** implemented in Python using the Mesa framework. The project explores how cooperation and defection emerge in repeated interactions between agents.
+Agent-based simulation of the Prisoner's Dilemma using Mesa.  
+Explores emergence of cooperation and defection in repeated interactions.
 
-**🛠️ Languages & Tools:** `Python` · `Mesa` · `Jupyter Notebook`
+**🛠️ Tools:** Python · Mesa · Jupyter Notebook
+
+---
 
 ### 🌊 Threshold Cascade Project — Social Influence & AI Opinion Adoption
 
-This project combines the **Axelrod cultural diffusion model** with the **Granovetter threshold model** to simulate how opinions about AI spread through a population.
+Combines Axelrod cultural diffusion model with Granovetter threshold model to simulate opinion spreading.
 
 Key aspects:
-- agents form cultural profiles via the Axelrod model,
-- opinion dynamics (Pro-AI / Neutral / Anti-AI) are governed by weighted similarity thresholds,
-- analysis includes tipping points, threshold sensitivity experiments, and opinion evolution over time.
+- cultural evolution via Axelrod model
+- opinion dynamics (Pro-AI / Neutral / Anti-AI)
+- threshold-based adoption under social influence
+- analysis of tipping points and convergence
 
-**🛠️ Languages & Tools:** `Python` · `Mesa` · `matplotlib` · `Jupyter Notebook`
+**🛠️ Tools:** Python · Mesa · Matplotlib · NumPy
+
+---
+
+### 🤖 CMSS Project — Social Influence and Public Opinions Towards AI
+
+This project investigates how social influence shapes public opinions towards Artificial Intelligence (AI) in online social networks.
+
+It combines:
+- Axelrod Model of Cultural Dissemination
+- Granovetter Threshold Model
+
+Key focus:
+- opinion formation under social influence
+- consensus, polarization, fragmentation
+- role of homophily and thresholds
+
+Metrics:
+- opinion distribution
+- consensus level
+- polarization
+- number of opinion groups
+- convergence time
+- AI adoption rate
+
+**🛠️ Tools:** Python · NetworkX · NumPy · Pandas · Matplotlib
 
 ---
 
 ## 📁 TU_Graz_forecasting_project
 
-This folder contains projects related to **macroeconomic forecasting**.
-
 ### 📈 Forecasting Industrial Production Using FRED-MD Data
 
-This project forecasts the **U.S. Industrial Production Index (INDPRO)** using the FRED-MD macroeconomic database with an expanding-window evaluation framework.
+Forecasting U.S. Industrial Production using macroeconomic data.
 
-Forecasting methods compared:
+Models:
 - AR(1), Random Walk
-- OLS, Ridge (BIC), Lasso (BIC)
+- OLS, Ridge, Lasso
 - Principal Component Regression (PCR)
 
-Key findings: Ridge regression achieved the lowest RMSE, outperforming OLS and simple benchmarks.
+Result:
+Ridge regression achieved best performance (lowest RMSE).
 
-**🛠️ Languages & Tools:** `R` · `glmnet` · `ggplot2`
+**🛠️ Tools:** R · glmnet · ggplot2
 
 ---
 
 ## 👤 Author
 
-**Dinmukhamed Atabay**
-Software Engineering Student at TU Graz
+**Dinmukhamed Atabay**  
+Software Engineering Student at TU Graz  
 
-**My Instagram: @ata3ay**
+**Instagram:** @ata3ay
